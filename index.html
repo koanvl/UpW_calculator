@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cost calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="src/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Cost Calculator</h1>
+      </div>
+      <div class="col-4">
+        <form action="" id="form">
+        <div class="mb-3">
+          <label for="inputTurnover" class="form-label">Turnover:</label>
+          <input type="text" class="form-control" id="inputTurnover" placeholder="Example input placeholder">
+        </div>
+        <div class="mb-3">
+          <label for="inputBudget" class="form-label">Budget:</label>
+          <input type="text" class="form-control" id="inputBudget" placeholder="Another input placeholder">
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkBox">
+          <label class="form-check-label" for="checkBox">
+            Include UA taxes
+          </label>
+        </div>
+        <div class="error-message"></div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary" id="button">Calculate</button>
+        </div>
+      </form>
+      </div>
+      <div class="col-8"></div>
+      <div class="col-4">
+        <div class="result-item-wrap">
+          <div class="item-row">
+            <div class="text">UpWork Fee: </div><div class="result" id="uwFee"></div>
+          </div>
+          <div class="item-row">
+            <div class="text">Payoneer: </div><div class="result" id="payoneerSum"></div>
+          </div>
+          <div class="item-row">
+            <div class="text">Payoneer comission: </div><div class="result" id="payoneerComission"></div>
+          </div>
+          <div class="item-row">
+            <div class="text">Total withdrawal of funds: </div><div class="result" id="totalFithdrawalFunds"></div>
+          </div>
+          <div class="item-row">
+            <div class="text">UA taxes: </div><div class="result" id="uaTaxes"></div>
+          </div>
+          <div class="item-row">
+            <div class="text">Total withdrawal include UA taxes: </div><div class="result" id="TotalWithuaTaxes"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="src/main.js"></script>
+</body>
+</html>

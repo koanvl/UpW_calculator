@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.result-item-wrap,
+.item-row {
+  width: 100%;
+  float: left;
+}
+
+.text, .result {
+  width: 50%;
+  float: left;
+  padding: 10px 0;
+}
